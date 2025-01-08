@@ -3,7 +3,6 @@ import { DashboardBlocks } from "../components/DashboardBlocks";
 import { EmptyState } from "../components/EmptyState";
 import { InvoiceGraph } from "../components/InvoiceGraph";
 import { RecentInvoices } from "../components/RecentInvoices";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { signOut } from "../utils/auth";
 import prisma from "../utils/db";
 import { requireUser } from "../utils/hooks";

@@ -165,7 +165,7 @@ export async function editInvoice(prevState: any, formData: FormData) {
 export async function DeleteInvoice(invoiceId: string) {
   const session = await requireUser();
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
   const data = await prisma.invoice.delete({
     where: {
       userId: session.user?.id,
@@ -179,7 +179,7 @@ export async function DeleteInvoice(invoiceId: string) {
 export async function MarkAsPaidAction(invoiceId: string) {
   const session = await requireUser();
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
   const data = await prisma.invoice.update({
     where: {
       userId: session.user?.id,

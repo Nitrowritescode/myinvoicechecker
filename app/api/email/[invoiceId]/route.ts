@@ -47,7 +47,7 @@ export async function POST(
     });
 
     return NextResponse.json({ success: true });
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
   } catch (error) {
     return NextResponse.json(
       { error: "Failed to send Email reminder" },
